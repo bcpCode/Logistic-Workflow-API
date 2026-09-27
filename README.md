@@ -59,13 +59,3 @@ This project is being developed to improve my competence in .NET and backend arc
 * [x] **Data Configuration:** Configuring decimal values such as capacity and weight to be stored with exactly two digits after the decimal point at the database level.
 * [x] **Error Resolution:** Permanently resolving the Object Cycle error that occurred during the JSON serialization of relational data by using `ReferenceHandler.IgnoreCycles`. // Error fix
 * [x] **CORS Policy Configuration:** Successfully configuring CORS policies so that frontend applications can communicate with the API securely and without problems.
-
-### 🛠️ Planned Steps (Future Goals)
-
-* [ ] **Authentication System:** Implementing user registration (`Register`) and login (`Login`) mechanisms.
-* [ ] **Security Infrastructure (JWT):** Moving the authentication process to a secure structure based on the industry-standard JWT (JSON Web Token).
-* [ ] **Role-Based Authorization:** Defining roles such as `Admin`, `Warehouse Staff`, and `Driver` and restricting access to API endpoints in order to improve system security.
-* [ ] **Validation:** Using `Data Annotations` to prevent invalid inputs such as negative weight values, empty licence plates, or invalid addresses before they reach the Controller level.
-* [ ] **Improving Relational Data:** Using Entity Framework Core's `Include` mechanism so that when a shipment is retrieved, the licence plate and status information of its assigned vehicle are also included in the JSON response.
-* [ ] **Exception Handling:** Creating a shared Middleware structure that returns standard and meaningful error objects instead of complex code when unexpected errors occur within the application.
-* [ ] **Soft Delete:** Using an `IsActive = false` flag instead of permanently deleting vehicles or shipments from the database in order to preserve data integrity and historical reporting.
